@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+	<form method="POST">{% csrf_token %}
+	<h1>Maintainance Schedule</h1>
+		Machine:<input type="text" name="machine" placeholder="Machine"><br>
+		Upcoming maintainance date:<input type="date" name="date" placeholder="Date"><br>
+		Recent maintainance date:<input type="date" name="date1" placeholder="Date"><br>
+		<button ="submit">submit</button>	
+
+</body>
+</html>

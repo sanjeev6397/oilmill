@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>order</title>
+	<style>
+		h1{
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			font-style: italic;
+			font-size: 30px;
+		} 
+		body{
+			background-color:lightgreen ;
+		}
+		</style>
+</head>
+<h1>Order information</h1>
+<body>
+	<form method="POST">{% csrf_token %}
+			Date Placed:<input type="Date" name="date2" placeholder="Date"><br>
+			<br>
+			Customer Name:<input type="text" name="name" placeholder="name"><br>
+			<br>
+			Contact number:<input type="text" name="number" placeholder="number"><br>
+			<br>
+			Delivery address:<input type="text" name="address" placeholder="address"><br>
+			<br>
+			Product name:<input type="text" name="name1" placeholder="name"><br>
+			<br>
+			Quantity :<input type="text" name="qantity" placeholder="Quantity"><br>
+			<br>
+			Total price:<input type="text" name="total" placeholder="Total"><br>
+			<br>
+			Payment method:<input type="text" name="method" placeholder="Method"><br>
+			<br>
+			Total amount Paid:<input type="amount" name="amount" placeholder="amount"><br>
+			<br>
+			Delivery status:<input type="text" name="status" placeholder="status"><br>
+			<br>
+			Expected delivery:<input type="date" name="date3" placeholder="Date"><br>
+			<button ="submit">submit</button>
+			<hr>	
+</body>
+</html>

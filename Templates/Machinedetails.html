@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>machine</title>
+</head>
+<body>
+	<form method="POST">{% csrf_token %}
+	<h1>Machine details</h1>
+		Machine id:<input type="text" name="machineid" placeholder="Machine"><br>
+		Status:<input type="" name="status" placeholder="status"><br>
+		Current output:<input type="text" name="output" placeholder="output"><br>
+		Last maintainanace:<input type="date" name="maintainanace" placeholder="maintainanace"><br>
+		<button ="submit">submit</button>
+
+</body>
+</html>

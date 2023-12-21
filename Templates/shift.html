@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>shift</title>
+</head>
+<body>
+	<form method="POST">{% csrf_token %}
+	<h1>Shift</h1>
+		Shift :<input type="text" name="shiftnum" placeholder="shift num"><br>
+		Date:<input type="Date" name="date" placeholder="Date"><br>
+		Production output:<input type="text" name="output" placeholder="output"><br>
+		Issues/Notes:<input type="text" name="issues" placeholder="Issues"><br>
+		<button ="submit">submit</button>
+
+</body>
+</html>

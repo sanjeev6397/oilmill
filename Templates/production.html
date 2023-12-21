@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Production</title>
+</head>
+<body>
+	<form method="POST">{% csrf_token %}
+	<h1>Current production status</h1>
+	<div>
+	<ul>
+		<li>Date:<input type="date" name="time" placeholder="date"></li><br>
+		<li>Shift:<input type="text" name="shift" placeholder="Shift"></li><br>
+		<li>Total production:<input type="text" name="production" placeholder="production"></li><br>
+		<li>Machine in use:<input type="text" name="machine" placeholder="machine"></li><br>
+		<button ="submit">submit</button>
+	</ul>
+	<hr>
+	</div>		
+
+	<h1>Deatils of machine</h1>
+		<a href="/mac">click me</a><br>
+
+	<h1>Deatils of shift</h1>
+		<a href="/sh">click me</a><br>
+		
+	<h1>Deatils of maintainance</h1>
+		<a href="/main">click me</a><br>				
+</body>
+</html
